@@ -1,9 +1,4 @@
 export function ShopItemFunc(props) {
-  console.log('Вызвана функция')
-  console.log(props)
-  console.log(props.item)
-  console.log(props.item.brand)
-
   const item = props.item
 
   return(
@@ -17,7 +12,7 @@ export function ShopItemFunc(props) {
       </div>
       <div className="divider"></div>
       <div className="purchase-info">
-        <div className="price">{item.currency}{item.price}.toFixed(2)</div>
+        <div className="price">{item.currency}{item.price.toFixed(2)}</div>
         <button>Добавить в корзину</button>
       </div>
     </div>

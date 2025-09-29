@@ -5,7 +5,6 @@ import './App.css'
 import { ShopItemFunc } from './components/ShopItemFunc.jsx'
 
 function App() {
-  console.log('Приложение запущено')
   const item = {
     brand: 'Tiger of Sweden',
     title: 'Leonard coat',
@@ -14,8 +13,6 @@ function App() {
     price: 399,
     currency: '£'
   }
-  
-  console.log('Информация о карточке получена')
   
   return (
     <div className="container">
